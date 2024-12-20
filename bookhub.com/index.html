@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+    <header>
+       <nav class="navbar"> 
+        <div class="logo"><img src="bb.jpeg" alt="B Logo" width="50" height="50"><a href="#">BOOKHUB.COM</a></div>
+        <ul>
+           
+           <li class="nav"><a href="#home">Home</a></li>
+           <li class="nav"><a href="#browse">Browse</a></li>
+           <li class="nav"><a href="#aboutUs">About Us</a></li>
+           <li class="nav"><a href="#reviews">Add a Review</a></li>
+           <li class="nav"><a href="login.html">Login</a></li>
+         </ul>
+       </nav>
+       
+           <div id ="home">
+           <div class="tagline">Discover Review Connect - The Book Lover's Hub</div>
+          <div class="mm">
+           <h2 class="section-title">Highly Rated Books</h2>
+
+           <!-- Highly Rated Books Section -->
+           <div class="books-section">
+             <!-- Book 1 -->
+             <div class="book-card">
+              <a href="https://r.search.yahoo.com/_ylt=AwrPpm0CbGRnbgIAAFa7HAx.;_ylu=Y29sbwNzZzMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1735844098/RO=10/RU=https%3a%2f%2farchive.org%2fdownload%2f3_20240517_20240517_1505%2fIt_Ends_With_Us_A_Novel_-_Colleen_Hoover.pdf/RK=2/RS=1V1alU0o8JhaVfSMKf450ijvWNQ-"target="_blank">
+               <img src="endwithus.jpg" alt="Book 1" class="book-image">
+               </a>
+               <div class="book-details">
+                 <h3 class="book-title">Book Title 1</h3>
+                 <p class="book-author">Author 1</p>
+                 <span class="book-rating">⭐ 4.8</span>
+               </div>
+             </div>
+         
+             <!-- Book 2 -->
+             <div class="book-card">
+               <img src="book2.png" alt="Book 2" class="book-image">
+               <div class="book-details">
+                 <h3 class="book-title">Book Title 2</h3>
+                 <p class="book-author">Author 2</p>
+                 <span class="book-rating">⭐ 4.7</span>
+               </div>
+             </div>
+         
+             <!-- Book 3 -->
+             <div class="book-card">
+               <img src="book3.jpg" alt="Book 3" class="book-image">
+               <div class="book-details">
+                 <h3 class="book-title">Book Title 3</h3>
+                 <p class="book-author">Author 3</p>
+                 <span class="book-rating">⭐ 4.9</span>
+               </div>
+             </div>
+         
+             <!-- Book 4 -->
+             <div class="book-card">
+               <img src="book4.png" alt="Book 4" class="book-image">
+               <div class="book-details">
+                 <h3 class="book-title">Book Title 4</h3>
+                 <p class="book-author">Author 4</p>
+                 <span class="book-rating">⭐ 4.6</span>
+               </div>
+             </div>
+           </div>
+           </div>
+           </div>
+    </header>
+    <main>
+      <div id="browse">
+        <section class="search-section">
+            <h2 class="search-title">Find Your Favorite Books</h2>
+            <div class="search-bar">
+              <input type="text" class="search-input" placeholder="Search for books...">
+              <button class="search-button">Search</button>
+            </div>
+          </section>
+        
+          <!-- Categories Section -->
+          <section class="categories-section">
+            <a href="romance.html" class="category-box">Romance</a>
+            <a href="fiction.html" class="category-box">Fiction</a>
+            <a href="non-fiction.html" class="category-box">Non-Fiction</a>
+            <a href="self-help.html" class="category-box">Self-Help</a>
+          </section>
+      </div>
+      <div id = aboutUs>
+          <section class="about-us-section">
+            <h2 class="about-us-title">About Us</h2>
+            <p class="about-us-description">
+              At BookHub, we believe in the power of stories to change the world. Our mission is to connect readers with books that inspire, entertain, and educate. Whether you're into fiction, romance, or self-help, our platform offers a wide range of genres that cater to every interest. We strive to provide the best experience by offering a space where users can share their thoughts through reviews, find highly rated books, and be a part of a community that values the love of reading.
+            </p>
+            <!-- Optional Image -->
+            <img src="your-image.jpg" alt="About Us Image" class="about-us-image">
+        </section>
+      </div>
+        <section class="reviews-section">
+            <h2 class="reviews-title">What Our Readers Say</h2>
+        
+            <!-- Reviews Grid -->
+             <div id="reviews">
+             
+            <div class="reviews-container">
+              <div class="review-card">
+                <h3>“A Wonderful Journey!”</h3>
+                <p>This book took me on an unforgettable journey through the realms of fantasy. Highly recommended!</p>
+                <p class="review-author">- Emily R.</p>
+              </div>
+              <div class="review-card">
+                <h3>“Inspiring and Motivating”</h3>
+                <p>A must-read for anyone looking for self-improvement. I found myself motivated every step of the way!</p>
+                <p class="review-author">- John D.</p>
+              </div>
+              <div class="review-card">
+                <h3>“A Heartfelt Story”</h3>
+                <p>It touched my heart in ways I never expected. A true masterpiece in storytelling.</p>
+                <p class="review-author">- Sarah K.</p>
+              </div>
+            </div>
+        
+            <!-- Add a Review Form -->
+            <div class="add-review-form">
+              <h3>Add Your Review</h3>
+              <input type="text" placeholder="Your Name" id="reviewer-name" required>
+              <textarea placeholder="Write your review here..." id="review-text" rows="5" required></textarea>
+              <button onclick="submitReview()">Submit Review</button>
+            </div>
+          </section>
+        </div>
+          
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 BookHub.com. All rights reserved.</p>
+      </footer>
+    
+</body>
+</html>
